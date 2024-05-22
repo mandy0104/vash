@@ -186,7 +186,7 @@ class fathmm_dash_MKL_coding_predTerms(models.Model):
     term = models.TextField(null=True)
 
 
-class avsnp150Terms(models.Model):
+class avsnp147Terms(models.Model):
     cohort = models.ForeignKey(CohortModel, on_delete=models.CASCADE)
     term = models.TextField(null=True)
 
@@ -322,7 +322,7 @@ class VariantModel(models.Model):
     CLNDISDB = models.TextField(null=True)
     CLNREVSTAT = models.TextField(null=True)
     CLNSIG = models.TextField(null=True)
-    avsnp150 = models.TextField(null=True)
+    avsnp147 = models.TextField(null=True)
     esp6500siv2_all = models.FloatField(null=True)  # !
     tbbaf_all = models.FloatField(null=True)
     tbbaf_illumina = models.FloatField(null=True)

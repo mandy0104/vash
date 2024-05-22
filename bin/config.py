@@ -18,7 +18,7 @@ fields_with_terms = ['AAChange.knownGene', 'AAChange.refGene', 'ANNOVAR_DATE', '
                      'Func.refGene', 'GeneDetail.knownGene', 'GeneDetail.refGene', 'Gene.knownGene', 'Gene.refGene',
                      'Geno2MP', 'LRT_pred', 'M-CAP_pred', 'MetaLR_pred', 'MetaSVM_pred', 'MostImportantFeatureGene',
                      'MostImportantGeneFeature', 'MousePhenotypeIMPC', 'MousePhenotypeMGI', 'MutationTaster_pred', 'PROVEAN_pred',
-                     'Polyphen2_HDIV_pred', 'Polyphen2_HVAR_pred', 'SIFT_pred', 'ZebrafishPhenotype', 'avsnp150', 'culprit',
+                     'Polyphen2_HDIV_pred', 'Polyphen2_HVAR_pred', 'SIFT_pred', 'ZebrafishPhenotype', 'avsnp147', 'culprit',
                      'fathmm-MKL_coding_pred']
 
 infos_to_rename = {

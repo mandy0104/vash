@@ -37,7 +37,7 @@ from app.models import (AAChange_dot_knownGeneTerms, AAChange_dot_refGeneTerms,
                         MetaLR_predTerms, MetaSVM_predTerms,
                         MutationTaster_predTerms, Polyphen2_HDIV_predTerms,
                         Polyphen2_HVAR_predTerms, PROVEAN_predTerms,
-                        SIFT_predTerms, VariantModel, avsnp150Terms,
+                        SIFT_predTerms, VariantModel, avsnp147Terms,
                         culpritTerms, fathmm_dash_MKL_coding_predTerms,
                         variantIDTerms)
 
@@ -390,7 +390,7 @@ def create_sub_variants(id, id_ori, queries, admin_group):
     for field in terms.keys():
         # if field == 'ID':
         #     continue
-        # if field == 'avsnp150':
+        # if field == 'avsnp147':
         #     continue
         # if field == 'ID':
         #     objs = [eval(f'variantIDTerms(cohort_id={id}, term="{term}")')
@@ -440,7 +440,7 @@ def cohort_update(cohort_id, n_variants, terms, samples, others, available):
     for field in terms.keys():
         # if field == 'ID':
         #     continue
-        # if field == 'avsnp150':
+        # if field == 'avsnp147':
         #     continue
         if field == 'ID':
             objs = [eval(f'variantIDTerms(cohort_id={cohort_id}, term="{term}")')
@@ -532,7 +532,7 @@ def build_info(infos, info_keys, info_keys_to_rename):
     for key in missing_info_keys:
         info[key] = '.'
 
-    info['variantID'] = info['avsnp150']
+    info['variantID'] = info['avsnp147']
     try:
         info['AF'] = str(int(info['AC']) / int(info['AN']))
     except ValueError:

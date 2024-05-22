@@ -12,7 +12,7 @@ const _parseColumns = groupTree => {
   // 	   refGene (groupNode)
   // 		Func.refGene
   // 		Gene.refGene
-  // 	   avsnp150 (columnNode)
+  // 	   avsnp147 (columnNode)
   const returnObjs = { columnGroups: {}, columnNames: [], columns: {} }
 
   for (const group in groupTree) {
