@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/vash
+    depends_on:
+      - db
+
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: vash
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
